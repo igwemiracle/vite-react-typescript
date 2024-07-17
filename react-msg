@@ -1,0 +1,47 @@
+==> React is a JavaScript Library for building user interfaces. In contrast to React,
+    we have other tools like `Angular` and `Vue` which are Frameworks. The difference
+    between a Library and a Framework is that, A Library is a tool that provides specific 
+    functionality, While a Framework is just set of tools and guidelines for building apps.
+        ======= [REACT] ========
+    * UI ------------
+    * Routing ------------
+    * HTTP ------------
+    * Managing app state
+    * Internalization ------------ 
+    * Form Validation ------------
+    * Animations etc ------------
+To Create a React Component
+    - create a file for our next React component using TypeScript
+    - Give it an extension 'ts' or 'tsx'.`ts` is used when we want to write plain TypeScript and `tsx` is used when we want to write a React component using TypeScript
+    - There two ways to create a React Component:
+        * Using JavaScript class
+        * Using JavaScript function ✔️
+    We use the JSX syntax in our React component;
+        function Message() {
+            return <h1>Hello, World!</h1>; 
+        }
+    One of the great things of JSX is that;
+        * It allows us to easily create `dynamic` content. For Example;
+           function Greeting() {
+                const name = "Miracle";
+                return <h1>Hello, {name}</h1>; 
+            }
+            Even a `function` can be passed, in fact anything that can return a value
+            can be passed dynamically.
+        * A conditional statement can also be used within the scope of the function. 
+        * Note: In React a Component can not return more than one element. 
+            A way to resolve this issue is to import `Fragment` from react and
+                use the tag to wrap the component.
+            This can also be resolved by wrapping our component witj an empty tag that
+            both opens and closes(`<></>`)
+        * In JSX we do not have the "for" loop to help us loop through the elements
+            in an array instead we use another technique. In an Array we have a method called 
+           `map` which enables us to convert or map each item to an item of different type.
+        
+==================================================================================================
+Other Topics to Cover:
+    Building Components
+    Rendering markup with jsx 
+    Managing state 
+    Passing input via props
+    Debugging React app
